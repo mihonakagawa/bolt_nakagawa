@@ -2,9 +2,7 @@
 
 body {
   font-family: Lato, sans-serif;
-  /* font-family: Arial, Helvetica, sans-serif; */
 }
-
 button{
   background-color: transparent;
   border: none;
@@ -13,19 +11,22 @@ button{
   padding: 0;
   appearance: none;
 }
-
 i::before {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   content: "\f000";
 }
-
 .inner {
   width: 1100px;
   margin: 0 auto;
 }
+.title {
+  font-family: Raleway, sans-serif;
+}
 
-/* header */
+/* ******************
+  header
+  ****************** */
 .header {
   background-color: #fff;
 }
@@ -52,7 +53,9 @@ i::before {
   display: block;
 }
 
-/* bolt theme */
+/* ******************
+  bolt theme
+  ****************** */
 .theme {
   background-color: #f2f2f2;
   padding: 250px 0;
@@ -61,7 +64,6 @@ i::before {
   text-align: center;
 }
 .theme__title {
-  font-family: Raleway, sans-serif;
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
@@ -71,7 +73,9 @@ i::before {
   color: #c0c0c0;
 }
 
-/* what we can do */
+/* ******************
+  what we can do
+  ****************** */
 .introduction {
   background-color: #74cfae;
 }
@@ -98,6 +102,56 @@ i::before {
   font-weight: 300;
   color: #fff;
   line-height: 1.5;
+}
+
+/* ******************
+  OUR LATEST WORK
+  ****************** */
+.work {
+  background-color: #f2f2f2;
+  color: #333;
+}
+.work__inner {
+  padding: 60px 0 70px;
+}
+.work__title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.work__image {
+  padding: 40px 0 90px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.work__image > img {
+  margin-top: 80px;
+  margin-left: 100px;
+}
+.work__image > img:nth-child(-n+3) {
+  margin-top: 0px;
+}
+.work__image > img:nth-child(3n+1) {
+  margin-left: 0px;
+}
+.work__description {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+}
+.work__description__text {
+  width: 660px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.work__button {
+  font-size: 12px;
+  padding: 14px 20px;
+  color: #fff;
+  background-color: #74cfae;
+  border-radius: 2px;
+  margin-left: 90px;
 }
 
 @media screen and (max-width: 1199px) {
