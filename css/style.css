@@ -45,6 +45,10 @@ i::before {
   color: #fff;
   background-color: #74cfae;
   border-radius: 2px;
+  transition: .3s;
+}
+.header__button:hover {
+  color: #333;
 }
 .sp-show {
   display: none; /* スマホの時のみ改行コードを表示 */
