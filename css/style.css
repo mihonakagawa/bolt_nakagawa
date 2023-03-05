@@ -272,8 +272,6 @@ i::before {
   .work__description {
     display: block;
     text-align: center;
-    /* margin: 0 auto; */
-    /* flex-direction: column; */
   }
   .work__button {
     margin-left: 0;
@@ -327,5 +325,19 @@ i::before {
   }
   .pc-show {
     display: none;
+  }
+  .work__description__text {
+    width: 100%;
+  }
+  .nav__inner {
+    padding: 50px 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .nav__list {
+    flex-direction: column;
+  }
+  .nav__button {
+    width: 100%;
   }
 }
