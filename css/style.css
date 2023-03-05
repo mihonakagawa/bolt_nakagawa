@@ -78,7 +78,7 @@ i::before {
 }
 
 /* ******************
-  what we can do
+  WHAT WE CAN DO?
   ****************** */
 .introduction {
   background-color: #74cfae;
@@ -208,6 +208,10 @@ i::before {
   width: fit-content;
   margin: 0 auto;
 }
+.nav__list {
+  display: flex;
+  justify-content: center;
+}
 .nav__button {
   width: 185px;
   padding: 30px 0;
@@ -234,13 +238,61 @@ i::before {
   color: #fff;
 }
 
+/* ******************************************************
+  TAB
+  ****************************************************** */
 @media screen and (max-width: 1199px) {
   /* TAB + SP */
   .inner {
     width: 97%;
   }
+  .introduction__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .introduction__text {
+    width: auto;
+    padding: 20px 0 25px;
+  }
+  .work__image {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 80px;
+  }
+  .work__image > img {
+    margin: 0;
+  }
+  .work__image > img:nth-child(3n+1) {
+    margin-top: 80px;
+  }
+  .work__image > img:first-child {
+    margin-top: 0;
+  }
+  .work__description {
+    display: block;
+    text-align: center;
+    /* margin: 0 auto; */
+    /* flex-direction: column; */
+  }
+  .work__button {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .skills__list {
+    flex-direction: column;
+  }
+  .skills__list__content {
+    margin: 88px auto 0;
+  }
+  .skills__list__content:first-child {
+    margin: 0 auto;
+  }
 }
 
+/* ******************************************************
+  SP
+  ****************************************************** */
 @media screen and (max-width: 767px) {
   /* SPのみ */
   .theme {
