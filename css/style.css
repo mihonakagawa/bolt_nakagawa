@@ -11,6 +11,9 @@ button{
   padding: 0;
   appearance: none;
 }
+a {
+  text-decoration:none;
+}
 i::before {
   font-weight: 900;
   content: "\f000";
@@ -28,6 +31,9 @@ i::before {
   ****************** */
 .header {
   background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .header__inner {
   padding: 15px 0;
@@ -43,7 +49,6 @@ i::before {
   padding: 14px 12px;
   color: #fff;
   background-color: #74cfae;
-  border-radius: 2px;
   transition: .3s;
 }
 .header__button:hover {
@@ -83,13 +88,12 @@ i::before {
   background-color: #74cfae;
 }
 .introduction__inner {
-  padding: 50px 0 0;
+  padding-top: 50px;
   display: flex;
 }
 .introduction__img {
   width: 40%;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 .introduction__text {
   width: 60%;
@@ -119,7 +123,6 @@ i::before {
 }
 .work__title {
   font-size: 24px;
-  font-weight: 700;
   text-align: center;
 }
 .work__image {
@@ -152,14 +155,12 @@ i::before {
   font-weight: 300;
   line-height: 1.5;
   text-align: center;
-  float: left;
 }
 .work__button {
   font-size: 12px;
   padding: 14px 20px;
   color: #fff;
   background-color: #74cfae;
-  border-radius: 2px;
   margin-left: 90px;
   transition: .3s;
 }
@@ -205,8 +206,6 @@ i::before {
 }
 .nav__inner {
   padding: 200px 0;
-  width: fit-content;
-  margin: 0 auto;
 }
 .nav__list {
   display: flex;
@@ -218,6 +217,7 @@ i::before {
   font-size: 40px;
   color: #74cfae;
   transition: .3s;
+  text-align: center;
 }
 .nav__button:hover {
   background-color: #fff;
@@ -258,22 +258,18 @@ i::before {
   .work__image {
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
   }
   .work__image > li {
     margin: 0;
   }
-  .work__image > li:nth-child(3n+1) {
+  .work__image > li:nth-child(3n+4) {
     margin-top: 80px;
-  }
-  .work__image > li:first-child {
-    margin-top: 0;
   }
   .work__description {
     text-align: center;
-  }
-  .work__description__text {
-    float: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .work__button {
     margin-left: 0;
@@ -310,10 +306,8 @@ i::before {
     position: relative;
   }
   .header__button span {
-    content: '';
     display: block;
     height: 2px;
-    width: 25px;
     background-color: #c0c0c0;
   }
   .header__button__menubar {
