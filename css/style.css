@@ -262,7 +262,7 @@ i::before {
     padding-bottom: 25px;
   }
   .introduction__img {
-    width: fit-content;
+    width: 100%;
   }
   .introduction__text {
     width: auto;
