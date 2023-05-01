@@ -30,13 +30,13 @@ i::before {
   header
   ****************** */
 .header {
+  padding: 15px 0;
   background-color: #fff;
   position: sticky;
   top: 0;
   z-index: 1;
 }
 .header__inner {
-  padding: 15px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -77,6 +77,7 @@ i::before {
   color: #74cfae;
 }
 .theme__text {
+  margin-top: 20px;
   font-size: 30px;
   color: #c0c0c0;
 }
@@ -85,15 +86,18 @@ i::before {
   WHAT WE CAN DO?
   ****************** */
 .introduction {
+  padding-top: 50px;
   background-color: #74cfae;
 }
 .introduction__inner {
-  padding-top: 50px;
   display: flex;
 }
-.introduction__img {
+.introduction__img__box {
   width: 40%;
   text-align: center;
+}
+.introduction__img {
+  vertical-align: middle;
 }
 .introduction__text {
   width: 60%;
@@ -117,8 +121,6 @@ i::before {
 .work {
   background-color: #f2f2f2;
   color: #333;
-}
-.work__inner {
   padding: 60px 0 70px;
 }
 .work__title {
@@ -181,11 +183,9 @@ i::before {
   OUR SKILLS
   ****************** */
 .skills {
+  padding: 70px 0 100px;
   background-color: #4e4e4e;
   color: #fff;
-}
-.skills__inner {
-  padding: 70px 0 100px;
 }
 .skills__title {
   font-size: 24px;
@@ -212,8 +212,6 @@ i::before {
   ****************** */
 .nav {
   background-color: #f2f2f2;
-}
-.nav__inner {
   padding: 200px 0;
 }
 .nav__container {
@@ -237,8 +235,6 @@ i::before {
   ****************** */
 .footer {
   background-color: #74cfae;
-}
-.footer__inner {
   padding: 20px 0 25px;
   overflow: hidden;
 }
@@ -338,7 +334,7 @@ i::before {
   .work__description__text {
     width: 100%;
   }
-  .nav__inner {
+  .nav {
     padding: 50px 0;
   }
   .nav__container {
